@@ -1,10 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import './style.css'
 function Navbar() {
   return (
     <div>
-       <nav className="navbar navbar-expand-lg bg-light">
+      <h1 className="brand-title m-2">
+        VESTEL
+      </h1>
+       <nav className="navbar navbar-expand-lg ">
         <div className="container">
           <Link className="navbar-brand" to="/">
            Vestel
@@ -19,6 +22,22 @@ function Navbar() {
                 to='products'
                 className="nav-link active" aria-current="page" href="#">
                   Products
+              
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                to='products'
+                className="nav-link active" aria-current="page" href="#">
+                  Login
+              
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                to='products'
+                className="nav-link active" aria-current="page" href="#">
+                  Register
               
                 </Link>
               </li>
