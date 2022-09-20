@@ -1,0 +1,11 @@
+.detail-card {
+    max-width: 540px;
+    margin: auto;
+}
+
+.sepet{
+    background-color: transparent;
+    border: none;
+    padding: 10px 18px;
+    color: #dc3545;
+}

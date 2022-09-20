@@ -4,12 +4,13 @@ import axios from "axios";
 import useSWR from "swr";
 import { Link } from "react-router-dom";
 import random  from "../../img/random.jpg"
-import "./style.css";
+import './style.css'
+
 const fetcher = (url) => axios.get(url).then((res) => res.data);
 
 function SubCategory() {
   const { categoryID } = useParams();
-  console.log(categoryID);
+  console.log("categoryID:",categoryID);
 
   const { data, error } = useSWR(
     `https://store.vrunibex.com/mobile2/mbProduct/ProductList?CategoryID=${categoryID}`,
@@ -26,14 +27,17 @@ function SubCategory() {
           {data.Result.TopCategory.SubCategoryList.map((subCategory) => {
             return (
               <div
-                className="col-md-4 col-lg-3 col-sm-6 col-xs-12"
+                className="col-md-6 col-lg-3 col-sm-6 col-xs-12"
                 key={subCategory.ID}
               >
-                  <div className="card">
+                <Link className="link" to={`/products/${subCategory.ID}`}>
+                  <div className="card sub-card">
                     <img src={`${subCategory.ImageUri===null ? random : subCategory.ImageUri}`} alt="" />
                     <p className="sub-title">{`${subCategory.DisplayName.toUpperCase()}`}</p>
                   </div>
+                  </Link>
                 </div>
+             
             );
           })}
         </div>

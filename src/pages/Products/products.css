@@ -1,0 +1,21 @@
+.card-product{
+    height: 350px;
+    width: 250px;
+    background-color: transparent;
+    transition: all 0.5s;
+    margin: 5px;
+    text-align: center;
+}
+
+.card-product:hover{
+    transform: scale(0.95);
+    cursor: pointer;
+    box-shadow:0px 0px 5px 5px rgb(92, 92, 92);
+}
+
+.product-button{
+    margin-top: 60px;
+    background-color: transparent;
+    color: red;
+    border: none;
+}
