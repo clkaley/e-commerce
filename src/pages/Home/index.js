@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import useSWR from "swr";
+import { Link } from "react-router-dom";
 import "./style.css";
 import random from "../../img/random.jpg"
 const fetcher = (url) => axios.get(url).then((res) => res.data);
@@ -22,11 +23,13 @@ function Home() {
               item.ID < 11 && (
                 <div  key={item.ID} className="col-md-4 col-lg-3 col-sm-6 col-xs-12">
                   <div>
+                    <Link className="link" to={`/${item.ID}`}>
                     <div className="card">
                       <img src={`${item.ImageUri==="" ? random : item.ImageUri}`}  alt="" />
                       
                     </div>
                     <h6 className="title">{`${item.DisplayName.toUpperCase()}`}</h6>
+                    </Link>
                   </div>
                 </div>
               )
