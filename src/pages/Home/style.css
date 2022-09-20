@@ -1,0 +1,21 @@
+.card{
+    height: 220px;
+    width: 180px;
+    background-color: transparent;
+    transition: all 0.5s;
+    margin: 5px;
+}
+
+.card:hover{
+    transform: scale(0.95);
+    cursor: pointer;
+    box-shadow:0px 0px 5px 5px rgb(92, 92, 92);
+    
+}
+
+.title{
+    margin-left: -120px;
+    text-align: center;
+    margin-top: 10px;
+    color: #dc3545;
+}
