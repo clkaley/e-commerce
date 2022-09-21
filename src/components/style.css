@@ -7,3 +7,115 @@
 .navbar{
     background-color:  #eb3143;
 }
+
+.footer-content{
+    padding: 1rem;
+    margin-top: 100px;
+    background-color:#3b3b3b ;
+  }
+  
+  
+  .footer{
+     
+      color: #b4b3b4;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      margin-top: 20px;
+    }
+    
+    
+    .container p {
+      font-size: 15px;
+    }
+    
+     .about{
+      flex-grow: 1;
+      flex-basis: 100%;
+    
+    }
+  
+    
+   .container  .category{
+      flex-grow: 1;
+      flex-basis: 100%;
+    }
+  
+    .container .category h2{
+      margin-left: 35px;
+    }
+    
+    .container .category ul{
+      list-style-type: none;
+      color: white;
+    }
+    
+    .container .category ul li a{
+      font-size: 13px;
+      color: #b4b3b4;
+      text-decoration: none;
+    }
+    
+    .container .category ul li a:hover{
+      color: #df2027;
+    }
+    
+     .contact{
+      font-size: 15px;
+      flex-grow: 1;
+      flex-basis: 100%;
+    }
+    
+  .contact h2{
+    margin-left: 35px;
+  }
+  
+  .contact ul{
+      list-style-type: none;
+    }
+    
+  .contact ul li a{
+      line-height:0.6cm;
+      font-size: 14px;
+      text-decoration: none;
+      color: #b4b3b4;
+  
+    }
+    
+    
+    .contact ul li a:hover{
+      color: #df2027;
+    }
+    
+    .copyright{
+      color: #df2027;
+      padding: 15px;
+      font-size: 15px;
+    }
+  
+  
+    /* Meadia Queries */
+  @media (max-width:768px){
+      .container{
+        flex-direction: column;
+      }
+      .about{
+          margin-bottom: 15px;
+      }
+  
+  
+    }
+  @media (max-width:468px){
+  
+      .about, .category{
+        padding-top: 15px;
+      }
+      
+  }
