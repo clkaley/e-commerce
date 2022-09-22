@@ -26,9 +26,9 @@ function Home() {
                     <Link className="link" to={`/${item.ID}`}>
                     <div className="card">
                       <img src={`${item.ImageUri==="" ? random : item.ImageUri}`}  alt="" />
-                      
+                      <h6 className="m-auto title">{`${item.DisplayName.toUpperCase()}`}</h6>
                     </div>
-                    <h6 className="title">{`${item.DisplayName.toUpperCase()}`}</h6>
+                    
                     </Link>
                   </div>
                 </div>
