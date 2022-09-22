@@ -3,7 +3,6 @@ import axios from "axios";
 import useSWR from "swr";
 import { Link } from "react-router-dom";
 import './style.css'
-import random from "../../img/random.jpg"
 import Loading from "../../components/Loading";
 const fetcher = (url) => axios.get(url).then((res) => res.data);
 
@@ -22,17 +21,17 @@ function Home() {
           {data.Result.TreeList.map((item) => {
             return (
               item.ID < 11 && (
-                <div  key={item.ID} className="col-md-4 col-lg-3 col-sm-6 col-xs-12" >
-                  <div >
+                <div  key={item.ID} className="col-sm-6 col-lg-4 col-xl-3" >
+                
                     <Link className="link" to={`/${item.ID}`}>
-                    <div className="card">
-                      <img src={`${item.ImageUri==="" ? random : item.ImageUri}`}  alt="" />
-                      <h6 className="m-auto title">{`${item.DisplayName.toUpperCase()}`}</h6>
+                    <div className="card mt-5">
+                      <img className="card-img-top" src={`${item.ImageUri==="" ? 'https://statics.vestel.com.tr/productimages/20284057_r2_1000_1000.jpg' : item.ImageUri}`}  alt="" />
+                      <h6 className="m-auto title mb-4">{`${item.DisplayName.toUpperCase()}`}</h6>
                     </div>
                     
                     </Link>
                   </div>
-                </div>
+         
               )
             );
           })}
