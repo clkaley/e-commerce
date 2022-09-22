@@ -23,16 +23,18 @@ function Products() {
       <div className="row">
         {data.Result.ProductList.map((products) => {
           return (
-            <div  className="col-md-4 col-lg-3 col-sm-6 col-xs-12" key={products.ID}>
+            <div  className="col-sm-6 col-lg-4 col-xl-3" key={products.ID}>
           
-                <div className="card-product">
-                  <img style={{width:"150px"}} src={products.FirstProductImageURL} alt="" />
+                <div className="card mt-5">
+                  <img className="card-img-top" src={products.FirstProductImageURL} alt="" />
                   <p className="product-title">{products.DisplayName}</p>
                   <h6 className="product-title">
                     {products.ActualPriceToShowOnScreen} TL
                   </h6>
                   <Link to={`product-detail/${products.ID}`}>
+                    <div className="product-btn">
                   <button className="product-button">İncele</button>
+                  </div>
                   </Link>
                 </div>
               </div>
