@@ -192,6 +192,7 @@ display: flex;
 
     .header-content .header .logo{
         padding: 1rem;
+        margin-left: 0px;
     }
       
   }
