@@ -1,4 +1,6 @@
+import './index.css'
 import { Routes, Route } from "react-router-dom";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import ProductDetail from "./pages/ProductDetails";
@@ -15,6 +17,7 @@ function App() {
         <Route path="products/:productID" element={<Products />} />
         <Route path="products/:productID/product-detail/:product_id" element={<ProductDetail />} />
       </Routes>
+      <Footer/>
     </>
   );
 }
