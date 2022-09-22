@@ -110,14 +110,71 @@
     }
   
   
+
+
+
+  .header-content .header,header .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    z-index: 1000;
+}
+
+.header-content .header .logo{
+    font-size:1.5rem ;
+    color: #df2027;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+
+
+.header-content .header .form-container form{
+display: flex;
+}
+
+.header-content .header .form-container form #search{
+    height: 3rem;
+    width: 25rem;
+    font-size: 1rem;
+    padding: 0 1rem;  
+    border: 2px solid #ea2c3f ;
+}
+
+.header-content .header .form-container form #search:focus{
+  color: #ea2c3f ;
+    outline: none;
+}
+
+.header-content .header .form-container form label{
+  border:2px solid #ea2c3f ;
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color:  white;;
+}
+
+.header-content .header .form-container form label:hover{
+    background-color:white ;
+    color: #ea2c3f ;
+}
+
     /* Meadia Queries */
-  @media (max-width:768px){
+    @media (max-width:768px){
       .container{
         flex-direction: column;
       }
       .about{
           margin-bottom: 15px;
       }
+      .header-content .header .form-container form #search{
+        width: 100%;
+    }
   
   
     }
@@ -126,5 +183,13 @@
       .about, .category{
         padding-top: 15px;
       }
+      .header-content .header{
+        flex-flow: column;
+        padding: 2rem;
+    }
+
+    .header-content .header .logo{
+        padding: 1rem;
+    }
       
   }
