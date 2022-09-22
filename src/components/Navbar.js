@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Header from "./Header";
 import './style.css'
 
 function Navbar() {
   return (
     <div>
-      <h1 className="brand-title m-2">
-        VESTEL
-      </h1>
+      <Header/>
       <nav className="navbar navbar-dark navbar-expand-lg bg-light ">
   <div className="container-fluid ">
   <Link className="navbar-brand" to="/">
