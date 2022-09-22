@@ -149,14 +149,15 @@ display: flex;
 }
 
 .header-content .header .form-container form label{
-  border:2px solid #ea2c3f ;
+    border:2px solid #ea2c3f ;
     height: 3rem;
     width: 3rem;
     text-align: center;
-    line-height: 3rem;
+    line-height: 2.5rem;
     font-size: 1rem;
     cursor: pointer;
-    color:  white;;
+    background-color:#ea2c3f ;
+    color: white ;
 }
 
 .header-content .header .form-container form label:hover{

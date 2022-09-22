@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css'
 import { Link } from 'react-router-dom'
-
+import { BsSearch } from "react-icons/bs";
 function Header() {
   return (
     <>
@@ -12,8 +12,10 @@ function Header() {
         </Link>
         <div className="form-container">
             <form action="">
-                <input type="search" placeholder="Ne aramıştınız ?" id="search"/>
-                <label htmlFor="search" ></label>
+                <input type="search" placeholder="Ürün, kategori, servis ara" id="search"/>
+                <label htmlFor="search" >
+                <BsSearch/>
+                </label>
             </form>
         </div>
     </div>

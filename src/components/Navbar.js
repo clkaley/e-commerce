@@ -2,41 +2,41 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Header from "./Header";
 import './style.css'
-
+import { FaShoppingBasket,FaHouseUser,FaLongArrowAltRight } from "react-icons/fa";
 function Navbar() {
   return (
     <div>
       <Header/>
-      <nav className="navbar navbar-dark navbar-expand-lg bg-light ">
-  <div className="container-fluid ">
-  <Link className="navbar-brand" to="/">
+      <nav className="navbar navbar-dark navbar-expand-lg bg-light  ">
+  <div className="container-fluid mx-auto  ">
+  {/* <Link className="navbar-brand" to="/">
    Vestel
-  </Link>
+  </Link> */}
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
-    <div className="collapse navbar-collapse" id="navbarNav">
-      <ul className="navbar-nav">
+    <div className="collapse navbar-collapse " id="navbarNav">
+      <ul className="navbar-nav mx-auto">
         <li className="nav-item">
         <Link
         to='sign-in'
         className="nav-link active" aria-current="page" href="#">
-          Login
+          <FaHouseUser style={{fontSize:"22px"}}/>
         </Link>
         </li>
         <li className="nav-item">
         <Link
         to='sign-up'
         className="nav-link active" aria-current="page" href="#">
-          Register
+          <FaLongArrowAltRight style={{fontSize:"22px"}}/>
       
         </Link>
         </li>
         <li className="nav-item">
         <Link
-        to='products'
+        to='/'
         className="nav-link active" aria-current="page" href="#">
-          Sepet
+          <FaShoppingBasket style={{fontSize:"22px"}} />
         </Link>
         </li>
       </ul>
