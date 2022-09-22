@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './style.css'
+
 function Navbar() {
   return (
     <div>
@@ -20,15 +21,14 @@ function Navbar() {
 
               <li className="nav-item">
                 <Link
-                to='products'
+                to='sign-in'
                 className="nav-link active" aria-current="page" href="#">
                   Login
-              
                 </Link>
               </li>
               <li className="nav-item">
                 <Link
-                to='products'
+                to='sign-up'
                 className="nav-link active" aria-current="page" href="#">
                   Register
               
@@ -38,7 +38,7 @@ function Navbar() {
                 <Link
                 to='products'
                 className="nav-link active" aria-current="page" href="#">
-                  Sepetim
+                  Sepet
                 </Link>
               </li>
               {/* <li className="nav-item">
