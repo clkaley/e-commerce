@@ -28,12 +28,12 @@ function SubCategory() {
           {data.Result.TopCategory.SubCategoryList.map((subCategory) => {
             return (
               <div
-                className="col-md-6 col-lg-3 col-sm-6 col-xs-12"
+                className="col-sm-6 col-lg-4 col-xl-3"
                 key={subCategory.ID}
               >
                 <Link className="link" to={`/products/${subCategory.ID}`}>
-                  <div className="card sub-card">
-                    <img src={`${subCategory.ImageUri===null ? random : subCategory.ImageUri}`} alt="" />
+                  <div className="card mt-5">
+                    <img className="card-img-top" src={`${subCategory.ImageUri===null ? random : subCategory.ImageUri}`} alt="" />
                     <p className="sub-title">{`${subCategory.DisplayName.toUpperCase()}`}</p>
                   </div>
                   </Link>
