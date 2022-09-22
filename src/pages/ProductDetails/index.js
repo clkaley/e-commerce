@@ -4,7 +4,7 @@ import axios from "axios";
 import useSWR from "swr";
 import { Link } from "react-router-dom";
 import "./productdetail.css";
-
+import Loading from "../../components/Loading";
 const fetcher = (url) => axios.get(url).then((res) => res.data);
 
 function ProductDetail() {
@@ -16,7 +16,7 @@ function ProductDetail() {
     fetcher
   );
   if (error) return <div>failed to load</div>;
-  if (!data) return <div>loading...</div>;
+  if (!data) return <Loading/>;
   console.log(data);
   console.log("image", data.Result.ImageSetList[0].Path);
 

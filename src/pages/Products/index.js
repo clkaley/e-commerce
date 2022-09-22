@@ -4,6 +4,7 @@ import axios from "axios";
 import useSWR from "swr";
 import { Link } from "react-router-dom";
 import "./products.css";
+import Loading from "../../components/Loading";
 const fetcher = (url) => axios.get(url).then((res) => res.data);
 
 function Products() {
@@ -15,7 +16,7 @@ function Products() {
     fetcher
   );
   if (error) return <div>failed to load</div>;
-  if (!data) return <div>loading...</div>;
+  if (!data) return <Loading/>;
   console.log(data.Result.ProductList);
   return (
     <div className="container">

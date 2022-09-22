@@ -4,6 +4,7 @@ import useSWR from "swr";
 import { Link } from "react-router-dom";
 import './style.css'
 import random from "../../img/random.jpg"
+import Loading from "../../components/Loading";
 const fetcher = (url) => axios.get(url).then((res) => res.data);
 
 function Home() {
@@ -12,7 +13,7 @@ function Home() {
     fetcher
   );
   if (error) return <div>failed to load</div>;
-  if (!data) return <div>loading...</div>;
+  if (!data) return <Loading/>;
   console.log("data", data.Result.TreeList);
   return (
     <div>
