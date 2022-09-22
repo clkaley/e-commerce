@@ -5,7 +5,7 @@ function Loading() {
   return (
     <div>
         <div className="app">
-          <PropagateLoader color={"#dc3545"}  size={35} />
+          <PropagateLoader color={"#ea2c3f "}  size={35} />
         </div>
     </div>
   )

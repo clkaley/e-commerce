@@ -1,5 +1,5 @@
 .brand-title{
-    color: #dc3545;
+    color: #ea2c3f ;
     text-align: center;
     font-weight: bold;
 }
@@ -13,7 +13,8 @@
 }
 
 .navbar{
-    background-color:  #eb3143;
+    background-color:  #ea2c3f !important ;
+   color: white !important;
 }
 
 .footer-content{
@@ -72,7 +73,7 @@
     }
     
     .container .category ul li a:hover{
-      color: #df2027;
+      color: #ea2c3f ;
     }
     
      .contact{
@@ -99,11 +100,11 @@
     
     
     .contact ul li a:hover{
-      color: #df2027;
+      color: #ea2c3f ;
     }
     
     .copyright{
-      color: #df2027;
+      color: #ea2c3f ;
       padding: 15px;
       font-size: 15px;
     }
