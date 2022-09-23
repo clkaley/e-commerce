@@ -24,14 +24,14 @@ function ProductDetail() {
     <div className="mt-5">
       <div className="detail-card mb-3" style={{ maxwidth: "540px" }}>
         <div className="row g-0">
-          <div className="col-md-4">
+          <div className="col-lg-6 col-md-7">
             <img
               src={data.Result.FirstProductImageURL}
               className="img-fluid rounded-start"
               alt="..."
             />
           </div>
-          <div className="col-md-8">
+          <div className="col-lg-6 col-md-5">
             <div className="card-body m-5">
               <h5 className="card-title">{data.Result.DisplayName}</h5>
               <h4 className="card-text mt-4">
