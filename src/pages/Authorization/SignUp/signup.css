@@ -1,0 +1,15 @@
+.title-reg{
+    color: #ea2c3f ;
+    font-weight: bold;
+}
+
+.error{
+    color: #ea2c3f ;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.form-control:focus{
+    box-shadow: 2px 2px 25px #ea2c3f !important ;
+    border-color: #ea2c3f;
+}
