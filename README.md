@@ -1,7 +1,7 @@
 # Vestel Revize 
 Verilen API'lar ile Vestel Clone u yapmak amaçlanmıştır.
 
-React Router v6, useSWR React Query kullanılarak geliştirilmiştir. Responsive Tasarıma uygun olması amaçlanmıştır :) Eksik img lar için default bir img eklenip shorthand if else ile img çekilmediği yerde default ile eklenen img gösterildi.
+React Router v6, useSWR React Query kullanılarak geliştirilmiştir. Login ve Register page eklendi. Responsive Tasarıma uygun olması amaçlanmıştır :) Eksik img lar için default bir img eklenip shorthand if else ile img çekilmediği yerde default ile eklenen img gösterildi.
 
 ![Ekran Görüntüsü (639)](https://user-images.githubusercontent.com/74673470/192330805-e08ddc17-0491-42da-9a2e-3afa1d87cbcc.png)
 
